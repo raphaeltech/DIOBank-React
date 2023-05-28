@@ -1,5 +1,6 @@
 import { Box, Button, Center, Heading, Input, Stack } from "@chakra-ui/react"
 import { login } from "../services/login"
+import { DButton } from "./Dbutton"
 
 
 export const Card = () => {
@@ -13,9 +14,7 @@ export const Card = () => {
           <Input placeholder="email" />
           <Input placeholder="password" />
           <Center>
-            <Button onClick={login} colorScheme='teal' size='sm' width='100%' marginTop='5px'>
-              Entrar
-            </Button>
+            <DButton onClick={login}/>          
           </Center>
           </Stack>
         </Box>
